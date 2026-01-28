@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Level 3</title>
+</head>
+<body>
+
+    <h1>HTML Level 3<br><i>Practice Question</i></h1>
+<hr color="red">
+
+    <!--Que 1)-->
+    <p><b>Qs.1)</b> Recreate following Table using HTML.</p>
+    <!--Ans 1)-->
+    <table border="1">
+        <caption>Student Information</caption>
+
+            <tr>
+                
+                <th rowspan="6">Info</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>House</th>
+            </tr>
+        
+            <tr>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Kolkata</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+    </table>
+
+<hr color="red">
+
+    <!--Que 2)-->
+    <p><b>Qs.2)</b> Recreate the following form using HTML :</p>
+    <!--Ans 2)-->
+    <form action="server">
+        <div>
+            <label for="name">Name :</label>
+            <input id="name" type="text">
+        </div>
+        <div id="s_div">
+            Sex : 
+            <input id="sex" type="radio" name="sex" value="m">
+            <label for="sex">Male</label>
+            <input type="radio" id="sex1" name="sex" value="f">
+            <label for="sex1">Female</label>
+        </div>
+        <div>
+            <label for="country">Country :</label>
+            <select name="country" id="country">
+                <option value="ind">India</option>
+                <option value="nep">Nepal</option>
+                <option value="usa">USA</option>
+                <option value="cand">Canada</option>
+            </select>
+        </div>
+        <div>
+            <label for="box">Message :</label><br> 
+            <textarea name="mess" id="box" cols="22" rows="4"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="sub" value="yes" name="sub">
+            <label for="sub">Subscribe?</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+<hr color="red">
+
+    <!--Que 3)-->
+    <p><b>Qs.3)</b> Recreate the following form using HTML :</p>
+    <!--Ans 3)-->
+    <form action="server">
+        <h2>Feedback Form</h2>
+        <div>
+            <label for="name1">Name :</label>
+            <input type="text" id="name1" name="name" placeholder="Write your name">
+        </div>
+        <br>
+        <div>
+            <label for="mail">Email :</label>
+            <input type="email" id="mail" name="mail" placeholder="Write your email">
+        </div>
+        <br>
+        <div>
+            <label for="mess1">Message : </label><br>
+            <textarea name="mess" id="mess1" cols="30" rows="4"></textarea>
+        </div>
+        <br>
+        <div>
+            Rate us our of 5:<br>
+            <input type="radio" name="rate" id="1" value="1">
+            <label for="1">1</label><br>
+            <input type="radio" name="rate" id="2" value="2">
+            <label for="2">2</label><br>
+            <input type="radio" name="rate" id="3" value="3">
+            <label for="3">3</label><br>
+            <input type="radio" name="rate" id="4" value="4">
+            <label for="4">4</label>
+        </div>
+        <br>
+        <button type="submit">Send your message !</button>
+    </form>
+
+<hr color="red">
+
+
+</body>
+</html>

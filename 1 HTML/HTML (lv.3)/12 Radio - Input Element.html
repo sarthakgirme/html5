@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio - Input Element</title>
+</head>
+<body>
+    
+    <h1>Radio - Input Element</h1>
+    <p>If SAME <b>name attribute</b> then only one can be selected at a time. <br>If DIFFERENT name attribute, then all Radio Butoons/Input caan be selected. </p>
+<hr>
+    <form action="server">
+        <h3>Same NAME ATTRIBUTE : </h3>
+        <p>Select your Gender : </p>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">MALE.</label><br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">FEMALE.</label>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+<hr>
+    <form action="server1">
+        <h3>Different NAME ATTRIBUTE : </h3>
+        <p>Select your Gender : </p>
+        <input type="radio" name="male" id="male1" value="yes">
+        <label for="male1">MALE.</label><br>
+        <input type="radio" name="female" id="female1" value="yes">
+        <label for="female1">FEMALE.</label>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

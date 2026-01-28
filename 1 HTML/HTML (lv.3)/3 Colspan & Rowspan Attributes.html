@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan & Rowspan</title>
+</head>
+<body>
+    <h1>Colspan & Rowspan Attributes.</h1>
+    <p>Used to create cells which spans over multiple Rows or Columns.</p>
+<hr>
+    <!-- CREATING TABLE -->
+    <table border="black">
+        <caption>FOOD MENU</caption>
+        <thead>
+            <!-- ROW 1 in Header-->
+            <tr>
+                <!-- USING ROWSPAN="2" -->
+                <th rowspan="2">Item</th>
+                <!-- USING COLSPAN="2" -->
+                <th colspan="2">Price</th>
+            </tr>
+            <!-- ROW 2 in Header-->
+            <tr>
+                <th>IND</th>
+                <th>US</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ROW 1 in Body (Quriy 1)-->
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+                <td>0.14</td>
+            </tr>
+            <!-- ROW 2 in Body (Quriy 2)-->
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+                <td>0.17</td>
+            </tr>
+            <!-- ROW 3 in Body (Quriy 3)-->
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+                <td>0.28</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

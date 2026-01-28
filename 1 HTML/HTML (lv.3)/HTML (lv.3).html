@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML (lv.3)</title>
+    <style>
+        h1{
+            background-color: #043456;
+            color: aliceblue;
+            width: 450px;
+            padding: 1%;
+            padding-left: 3%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1) TABLES -->
+    <!-- TABLE THEORY -->
+    <h1>Tables in HTML</h1>
+    <p>Combination of Rows and Columns | Tables are used to Represent real life table data.</p>
+<hr>
+    <h3>Row :</h3>
+    <p>If analyzing the table Horizontally.</p>
+
+    <h3>Column :</h3>
+    <p>If analyzing the table Vertically.</p>
+<hr>
+    <h3>Table Header</h3>
+    <p>Main Row (or can say main Content) in the Table.</p>
+<hr>
+    <!-- TABLE CONTAINTS -->
+    <h3>Components of Table : </h3>
+    <ul>
+        <li>(&lt;table&gt;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Table. </li>
+        <li>(&lt;caption&gt;) | <b>Caption</b> of Table. </li>
+        <li>(&lt;tr&gt;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Table <b>Row</b>. (To create/display Individual Row.)</li>
+        <li>(&lt;th&gt;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Table <b>Header</b>. (Used to display Header.) </li>
+        <li>(&lt;td&gt;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Table <b>Data</b>. (Used to display Data.) </li>
+    </ul>
+<hr>
+    <!-- TABLE DEMONSTRATION -->
+    <table>
+        <!-- WITHOUT BORDER -->
+        <caption>College Student Data</caption>
+        <tr>
+            <th>Roll Number</th>
+            <th>Name of Student</th>
+            <th>Phone Number</th>
+        </tr>
+        <tr>
+            <td align="left">16</td>
+            <td align="center">Sarthak Girme</td>
+            <td align="right">7385084335</td>
+        </tr>
+        <tr>
+            <td align="left">27</td>
+            <td align="center">Manasvi Khedkar</td>
+            <td align="right">9307737018</td>
+        </tr>
+    </table>
+<hr>
+    <!-- WITH BLACK BORDER-->
+    <table border="black">
+        <caption>College Student Data</caption>
+        <tr>
+            <th>Roll Number</th>
+            <th>Name of Student</th>
+            <th>Phone Number</th>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Sarthak Girme</td>
+            <td>7385084335</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>Manasvi Khedkar</td>
+            <td>9307737018</td>
+        </tr>
+    </table>
+
+<HR>
+<HR>
+
+    <!-- 2) SEMANTICS IN HTML -->
+    <h1>Semantics in HTML</h1>
+    <h2>&lt;thead&gt;</h2>
+    <p>To wrap table header.</p>
+    <p><b>th</b> Tag comes in this tag. Means Header comes in this tag.</p>
+    <h2>&lt;tbody&gt;</h2>
+    <p>To wrap table body.</p>
+    <p><b>td</b> Tag comes in this tag. Means Data comes in this tag.</p>
+    <h2>&lt;tfoot&gt;</h2>
+    <p>To wrap table Footer.</p>
+    <p>Most of the time this tag is not used but, if want to column Total in the last then this Tag is used to Wrap that one.</p>
+    
+<HR>
+<HR>
+
+    <!-- 3) COLSPAN & ROWSPAN ATTRIBUTE -->
+    <h1>Colspan & Rowspan Attributes.</h1>
+    <p>Used to create cells which spans over multiple Rows or Columns.</p>
+<hr>
+    <!-- CREATING TABLE -->
+    <table border="black">
+        <caption>FOOD MENU</caption>
+        <thead>
+            <!-- ROW 1 in Header-->
+            <tr>
+                <!-- USING ROWSPAN="2" -->
+                <th rowspan="2">Item</th>
+                <!-- USING COLSPAN="2" -->
+                <th colspan="2">Price</th>
+            </tr>
+            <!-- ROW 2 in Header-->
+            <tr>
+                <th>IND</th>
+                <th>US</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ROW 1 in Body (Quriy 1)-->
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+                <td>0.14</td>
+            </tr>
+            <!-- ROW 2 in Body (Quriy 2)-->
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+                <td>0.17</td>
+            </tr>
+            <!-- ROW 3 in Body (Quriy 3)-->
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+                <td>0.28</td>
+            </tr>
+        </tbody>
+    </table>
+
+<hr>
+<hr>
+
+
+    <!-- 5) FORMS IN HTML-->
+    <h1>Forms in HTML.</h1>
+    <p>Forms are used to collect data from the User.</p>
+<hr>
+    <p><b>&lt;form&gt;</b></p>
+    <p>form content</p>
+    <p><b>&lt;/form&gt;</b></p>
+<hr>
+    <!-- ACTION ATTRIBUTE -->
+    <h1>Action Attribue.</h1>
+    <p>- Action attribute is used to define what action needs to be performed when a form is submitted or where the form data should be sent.
+        <br>- After filling all the data ijnto the form and after submitting the form what need to do with all this data is specified by this Action Attribute.
+        <br>- Action attribute used to tell that, sent all the data at address specified in action attribute.
+    </p>
+    <b>Example :</b>
+    <p>1) &lt;form action="/action.php"&gt;
+    <br>2) &lt;form actio="/action"&gt;
+    </p>
+
+
+<hr>
+<hr>
+
+
+    <!-- 6) INPUT-FORM ELEMENTS -->
+    <h1>Form Elements.</h1>
+    <h2>Input :</h2>
+    <ul>
+        <li>Used to create multiple form controls.</li>
+        <li>There are multiple types of inputs that can be created using <b>type</b> Attribute.</li>
+    </ul>
+<hr>
+    <input>
+<hr>
+    <h2>Type Attribute :</h2>
+    <ul>
+        <li>&lt;input&gt;</li>
+        <li>&lt;input <b>type="text"</b>&gt;</li>
+        <li>&lt;input <b>type="password"</b>&gt;</li>
+        <li>&lt;input <b>type="number"</b>&gt;</li>
+        <li>&lt;input <b>type="time"</b>&gt;</li>
+        <li>&lt;input <b>type="color"</b>&gt;</li>
+    </ul>
+<hr>
+    Simple input : <input><br>
+    Text : <input type="text"><br>
+    Passowrd input : <input type="password"><br>
+    Nunmer input : <input type="number"><br>
+    Time input : <input type="time"><br>
+    Color input : <input type="color"><br>
+    Date input : <input type="date"><br>
+    Email input : <input type="email"><br>
+    Button input : <input type="button"><br>
+    Checkbox input : <input type="checkbox"><br>
+    Radio input :  <input type="radio"><br>
+    Range input : <input type="range"><br>
+    Select input : <input type="select"><br>
+
+
+<hr>
+<hr>
+
+
+    <!-- 7) PLACEHOLDERS & LABLES -->
+    <!-- PLACEHOLDER -->
+    <h1>Placeholder Attribute.</h1>
+    <p>&lt;input type="text" <b>placeholder="Enter Name"</b>&gt;</p>
+    Enter your full name : <input type="text" placeholder="First Name">&nbsp;<input type="text" placeholder="Middle Name">&nbsp;<input type="text" placeholder="Last Name">
+<hr>
+    <h1>Label Element.</h1>
+    Lable element represents a caption for an item in a user interface.<br>I can click on name & I will be able to access the Box altimately.
+    <br>&nbsp;<br>
+    &lt;lable&gt;<br>&nbsp;&nbsp;&nbsp;Enter user name :<br>&nbsp;&nbsp;&nbsp;&lt;input type="text" placeholder="username"&gt;<br>&lt;/lable&gt;
+    <!-- LABEL -->
+    <label>
+        <p>Enter user name :&nbsp;&nbsp;<input type="text" placeholder="username"></p>
+    </label>
+<hr>
+    <h1>Lable <b>(Classical Approach).</b></h1>
+    Lable just used for Text and connected to input tag using <b>for</b>and <b>id</b> Attribute.
+    <p><b>Example :</b></p>
+    <p>&lt;label <b>for="username"&gt;</b>&nbsp;Enter Your Name :&nbsp;&lt;/label&gt;</p>
+    <p>&lt;input type="text" <b>id="username"</b> placeholder="username"&gt;</p>
+    <p><b>Result :</b></p>
+    <label for="input1">Enter Your Name : </label>
+    <input type="text" id="input1" placeholder="username">
+
+
+<hr>
+<hr>
+
+
+    <!-- 8) BUTTON ELEMENT -->
+    <!-- BUTTON TAG -->
+    <h1>Button Element.</h1>
+    <p><b>&lt;button&gt;</b>&nbsp;Submit&nbsp;<b>&lt;/button&gt;</b></p>
+<hr>
+    <form action="/action">
+        <!-- INSIDE FORM TAG -->
+        <p>Inside form tag.</p>
+        <button>Submit</button>
+        <li>On cliking the Submit button, it will save/sent all the form data to the specified action Attribute location.</li>
+    </form>
+<hr>
+    <!-- OUTSIDE FORM TAG -->
+    <p>Outside form tag.</p>
+    <button>Submit</button>
+    <li>On clicking this button nothin gonna happen. Because, this button is Outside the form tag.</li>
+<hr>
+    <!-- TYPE ATTRIBUTE -->
+    <h2>type Attribute :</h2>
+    <ol type="1">
+        <li>&lt;button <b>type="submit"</b>&gt;</li>
+        <li>&lt;button <b>type="button"</b>&gt;</li>
+        <li>&lt;button <b>type="reset"</b>&gt;</li>
+    </ol>
+<hr>
+    <!-- INSIDE FORM TAG -->
+    <h3>Inside Form tag :</h3>
+    <form action="/random">
+        <!-- DATA INPUT -->
+        <label for="input1">Enter Username : </label>
+        <input type="text" id="input1" placeholder="username"><br>
+        <label for="input2">Enter Password : </label>
+        <input type="password" id="input2" placeholder="password"><br>
+        <label for="input3">Enter Age : </label>
+        <input type="number" id="input3" placeholder="age"><br>
+<br>
+        <!-- BUTTONS -->
+        <button type="submit">Submit</button>
+        <button type="Button">Normal Button</button>
+        <button type="reset">Reset</button>
+    </form>
+<hr>
+    <h1>Input Tag with Type Attribute :</h1>
+    <b>value Attribute.</b><br><br>
+    <b>type Attribute.</b>
+    <p>&lt;input <b>type="button" value="anything_on_button"</b>&gt;</p>
+    <input type="submit">&nbsp;
+    <input type="button">&nbsp;
+    <input type="button" value="Click on Me !">&nbsp;
+    <input type="reset"><br>
+    <p>For buttons we will use <b>Button Tag</b> not <b>Input Tag</b> with Type Attributes.</p>
+
+
+<hr>
+<hr>
+
+    <!-- 9) NAME ATTRIBUTE -->
+    <h1>Name Attribute</h1>
+    <p>Name of the form control. Submitted with the form as part of a Name-Value pair.</p>
+    <p>&lt;input type="text" placeholder="enter name here" id="username" <b>name="username"</b> /&gt;</p>
+<hr>
+    <p>
+        &lt;form action="/server"&gt;<br>
+        &nbsp;&nbsp; &lt;div&gt; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="username">Username :&lt;/label&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="text"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeholder="enter name"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="username"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>name="username"</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp; &lt;div&gt; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="password">Password :&lt;/label&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="password"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeholder="enter password"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="password"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>name="pass"</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Unsafe way.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+    </p>
+<hr>
+    <form action="/server">
+        <div>
+            <label for="username">Username :</label>
+            <input 
+            type="text"
+            placeholder="Enter Username"
+            id="username"
+            name="username">
+        </div>
+        <div>
+            <label for="password">Password :</label>
+            <input 
+            type="text"
+            placeholder="Enter Password"
+            id="password"
+            name="pass">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+<hr>
+    <p>http://127.0.0.1:3000/server?<b>username=tiger&pass=123</b></p>
+<hr>
+    <p>(name-value) pairs == (username=tiger) and (pass=123)</p>
+<hr>
+    <h3>URL of YouTube : </h3>
+    <p><b>https://www.youtube.com/results?search_query=</b>apple</p>
+    <h3>Our Form : </h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="Search into YouTube." name="search_query">
+        <button type="submit">Search</button>
+        <li>form -&gt; <b>action=</b>"https://www.youtube.com/results".</li>
+        <li>input -&gt; <b>name=</b>"search_query".</li>
+        <li>button -&gt; <b>type=</b>"submit".</li>
+    </form>
+
+
+<hr>
+<hr>
+
+
+    <!-- 10) CHECKBOX - INPUT ELEMENT -->
+    
+    <h1>Checkbox - Input Element</h1>
+
+    <form action="server">
+        <p>Choose the Following According to you : </p>
+        <input type="checkbox" id="cbox" name="cbox" checked>
+        <label for="cbox">Developer </label><br>
+        <input type="checkbox" id="cbox1" name="cbox1">
+        <label for="cbox1">Engineer</label> <br>
+        <input type="checkbox" id="cbox2" name="cbox1">
+        <label for="cbox2">Designer</label>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <p>http://127.0.0.1:5500/HTML%20(lv.3)/server?<b>cbox=on</b></p>
+
+
+<hr>
+<hr>
+
+    <!-- 11) RADIO - INPUT ELEMENT -->
+    
+    <h1>Radio - Input Element</h1>
+    <p>If SAME <b>name attribute</b> then only one can be selected at a time. <br>If DIFFERENT name attribute, then all Radio Butoons/Input caan be selected. </p>
+<hr>
+    <form action="server">
+        <h3>Same NAME ATTRIBUTE : </h3>
+        <p>Select your Gender : </p>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">MALE.</label><br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">FEMALE.</label>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+<hr>
+    <form action="server1">
+        <h3>Different NAME ATTRIBUTE : </h3>
+        <p>Select your Gender : </p>
+        <input type="radio" name="male" id="male1" value="yes">
+        <label for="male1">MALE.</label><br>
+        <input type="radio" name="female" id="female1" value="yes">
+        <label for="female1">FEMALE.</label>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+<hr>
+<hr>
+
+
+    <!-- 13) SELECT - INPUT ELEMENT -->
+
+    <h1>Select Element (Dropdowns) : </h1>
+
+    Tag name = <b>select</b> > <b>option</b> <br>
+    attributes (select) =
+    <li>name</li>
+    <li>id</li>
+    attributes (option) =
+    <li>value</li>
+<hr>
+    <form action="server">
+        Select your State : 
+        <select name="state" id="state" aria-placeholder="Select State">
+            <!-- <option value="">States</option> -->
+            <option value="mh" selected>Maharashtra</option>
+            <option value="mp">Madhya Pradesh</option>
+            <option value="up">Utter Pradesh</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    
+
+<hr>
+<hr>
+
+
+    <!-- 14) RANGE - INPUT ELEMENT -->
+
+    <h1>Range - Input Element : </h1>
+    <li>Tags : <b>input</b></li>
+    <li>Attributes : <b>type="range", id, min, max, name, step, value.</b></li>
+<hr>
+    <form action="server">
+        Audio settings : <br>
+        <input type="range" id="vol" min="0" max="100" name="vol" step="10">
+        <label for="vol">Volume</label><br>
+        <input type="range" id="cowbell" min="100" max="500" name="cow" value="450">
+        <label for="cowbell">Cowbell</label>
+        <br><br>
+        <button type="submit">SUBMIT</button>
+    </form>
+
+<hr>
+<hr>
+
+    <!-- 15) TEXT AREA -->
+    <h1>Text Area </h1>
+    <li>Tags : <b>textarea, label.</b></li>
+    <li>Attributes : <b>id, name, cols, rows, placeholder.</b></li>
+<hr>
+    <form action="server">
+        <label for="box">Please give your valuable Feedback : </label><br>
+        <textarea name="feedbakc" id="box" cols="30" rows="3" placeholder="Write your Feedback here.."></textarea>
+        <br><button type="submit">Submit</button>
+    </form>
+
+<hr>
+<hr>
+
+
+      
+
+
+</body>
+</html>

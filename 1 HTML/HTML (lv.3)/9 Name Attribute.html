@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Attribute</title>
+</head>
+<body>
+    <h1>Name Attribute</h1>
+    <p>Name of the form control. Submitted with the form as part of a Name-Value pair.</p>
+    <p>&lt;input type="text" placeholder="enter name here" id="username" <b>name="username"</b> /&gt;</p>
+<hr>
+    <p>
+        &lt;form action="/server"&gt;<br>
+        &nbsp;&nbsp; &lt;div&gt; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="username">Username :&lt;/label&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="text"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeholder="enter name"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="username"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>name="username"</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp; &lt;div&gt; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="password">Password :&lt;/label&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="password"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeholder="enter password"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="password"<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>name="pass"</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Unsafe way.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+    </p>
+<hr>
+    <form action="/server">
+        <div>
+            <label for="username">Username :</label>
+            <input 
+            type="text"
+            placeholder="Enter Username"
+            id="username"
+            name="username">
+        </div>
+        <div>
+            <label for="password">Password :</label>
+            <input 
+            type="text"
+            placeholder="Enter Password"
+            id="password"
+            name="pass">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+<hr>
+    <p>http://127.0.0.1:3000/server?<b>username=tiger&pass=123</b></p>
+<hr>
+    <p>(name-value) pairs == (username=tiger) and (pass=123)</p>
+<hr>
+    <h3>URL of YouTube : </h3>
+    <p><b>https://www.youtube.com/results?search_query=</b>apple</p>
+    <h3>Our Form : </h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="Search into YouTube." name="search_query">
+        <button type="submit">Search</button>
+        <li>form -&gt; <b>action=</b>"https://www.youtube.com/results".</li>
+        <li>input -&gt; <b>name=</b>"search_query".</li>
+        <li>button -&gt; <b>type=</b>"submit".</li>
+    </form>
+
+</body>
+</html>

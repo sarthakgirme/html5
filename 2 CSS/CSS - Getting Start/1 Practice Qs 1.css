@@ -1,0 +1,53 @@
+*{
+    font-family: papyrus, didot;
+}
+
+h2{
+    color:orange;
+    /* text-decoration: underline; */
+    text-decoration: overline, underline;
+}
+
+button{
+    color:white;
+    background-color:blue;
+    font-family:optima;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+p{
+    color:black;
+    width: 56%;
+    line-height: 55px;
+    padding-left: 2%;
+    padding-right: 2%;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color:rgb(255, 230, 90);
+    text-transform: none;
+}
+
+a{
+    text-decoration:none;
+    font-family: 'Courier New', Courier, monospace;
+    color:red;
+    font-weight: bolder;
+    font-size: 50px;
+    /* text-align: right; */
+}
+
+button:hover{
+    font-size: large;
+    background-color: gold;
+    border: 0;
+    border-color: gold;
+}
+
+button:active{
+    background-color:hotpink
+}
+
+a:hover{
+    /* text-decoration:underline; */
+    text-decoration-line: underline;
+}
